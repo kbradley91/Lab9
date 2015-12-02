@@ -134,6 +134,12 @@ SECTIONS
 
    IQmath           : > RAML1,     PAGE = 0
    IQmathTables     : > IQTABLES,  PAGE = 0, TYPE = NOLOAD
+   INBUFA    ALIGN( 4096 ) : { } > RAML6 PAGE 1
+   RFFTdata1 		: > RAML4, PAGE = 1, ALIGN(512)
+   RFFTdata2 		: > RAML4, PAGE = 1, ALIGN(512)
+   RFFTdata3 		: > RAML4, PAGE = 1, ALIGN(512)
+   RFFTdata4 		: > RAML4, PAGE = 1, ALIGN(512)
+
 
    /* Uncomment the section below if calling the IQNexp() or IQexp()
       functions from the IQMath.lib library in order to utilize the
